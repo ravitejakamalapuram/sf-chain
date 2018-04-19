@@ -48,7 +48,7 @@ describe('Blockchain', () => {
     });
 
     it('it doesnot replace the chain with lesser length', () => {
-        bc.addBlock('foll');
+        bc.addBlock('foll'); 
         bc.replaceChain(bc2.chain);
 
         expect(bc.chain).not.toEqual(bc2.chain);
